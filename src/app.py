@@ -12,6 +12,8 @@ import pandas as pd
 import yfinance as yf
 from datetime import timedelta
 
+USERNAME_PASSWORD_PAIRS=[['Ponleeva', '11qOszm3STO'], ['N', 'K']]
+
 app = Dash(__name__)
 server = app.server
 nsdq = pd.read_csv('NASDAQcompanylist.csv')
@@ -44,6 +46,7 @@ app.layout = html.Div([
         dcc.Dropdown(
             id='my_ticker_symbol',
             options=options,
+            value = ['TSLA'],
             multi=True
         )], style={'display':'inline-block', 'verticalAlign':'top','width':'40%'}),
     html.Div([html.H3('Select start and end dates:'),
