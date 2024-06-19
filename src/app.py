@@ -13,7 +13,7 @@ import yfinance as yf
 from datetime import timedelta
 import dash_auth
 
-
+#password
 USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['K', 'N']]
 app = Dash(__name__)
 dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
