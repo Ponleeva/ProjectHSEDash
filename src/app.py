@@ -14,6 +14,7 @@ from datetime import timedelta
 
 USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['Ponleeva', '11qOszm3STO']]
 app = Dash(__name__)
+#USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['N', 'K']]
 dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 server = app.server
 nsdq = pd.read_csv('NASDAQcompanylist.csv')
