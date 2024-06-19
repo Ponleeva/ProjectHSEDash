@@ -11,6 +11,8 @@ import pandas as pd
 #from yahooquery import Ticker
 import yfinance as yf
 from datetime import timedelta
+import dash_auth
+
 
 USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['Ponleeva', '11qOszm3STO']]
 app = Dash(__name__)
