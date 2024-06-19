@@ -12,8 +12,9 @@ import pandas as pd
 import yfinance as yf
 from datetime import timedelta
 
-USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['N', 'K']]
+USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['Ponleeva', '11qOszm3STO']]
 app = Dash(__name__)
+dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 server = app.server
 nsdq = pd.read_csv('NASDAQcompanylist.csv')
 nsdq.set_index('Symbol', inplace=True)
