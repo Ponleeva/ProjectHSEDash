@@ -14,7 +14,7 @@ from datetime import timedelta
 import dash_auth
 
 #password new
-USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['K', 'N']]
+USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['1', '2']]
 app = Dash(__name__)
 
 dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
