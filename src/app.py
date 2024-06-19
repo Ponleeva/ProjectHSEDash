@@ -12,8 +12,7 @@ import pandas as pd
 import yfinance as yf
 from datetime import timedelta
 
-USERNAME_PASSWORD_PAIRS=[['Ponleeva', '11qOszm3STO'], ['N', 'K']]
-
+USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['N', 'K']]
 app = Dash(__name__)
 server = app.server
 nsdq = pd.read_csv('NASDAQcompanylist.csv')
