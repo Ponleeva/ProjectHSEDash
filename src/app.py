@@ -13,9 +13,10 @@ import yfinance as yf
 from datetime import timedelta
 import dash_auth
 
-#password
+#password new
 USERNAME_PASSWORD_PAIRS=[['username', 'password'], ['K', 'N']]
 app = Dash(__name__)
+
 dash_auth.BasicAuth(app, USERNAME_PASSWORD_PAIRS)
 server = app.server
 nsdq = pd.read_csv('NASDAQcompanylist.csv')
